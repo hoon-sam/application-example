@@ -1,6 +1,6 @@
 import React from 'react';
 import './SettingButton.css';
-import SettingImg from '../../Img/setting.svg';
+import SettingImg from '../../images/setting.svg';
 
 export default function SettingButton() {
   return (

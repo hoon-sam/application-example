@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from '../../Pages/Home';
-import Chat from '../../Pages/Chat';
-import Record from '../../Pages/Record';
-import Etc from '../../Pages/Etc';
+import Home from '../../pages/Home';
+import Chat from '../../pages/Chat';
+import Record from '../../pages/Record';
+import Etc from '../../pages/Etc';
 import './Content.css';
 
 export default function Content() {
