@@ -25,18 +25,18 @@ export const logout = () => ({
 });
 
 export const loginThunk = (email, password) => (dispatch) => {
-  // dispatch(loginRequest());
+  dispatch(loginRequest());
   return api.login(email, password)
     .then((res) => {
       if (res.status === 200) {
         return Promise.resolve(res.json());
       }
-      return Promise.reject(res.json());
+      return Promise.reject(res);
     }).then((data) => {
       dispatch(loginSuccess(data));
       return true;
     }).catch((err) => {
-      console.log(err);
+      console.log(err.statusText);
       dispatch(loginFailure());
       return false;
     });
