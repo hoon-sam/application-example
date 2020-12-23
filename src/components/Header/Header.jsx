@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import './Header.css';
 import SettingButton from './SettingButton';
 import LoginButton from './LoginButton';
-import { loginSuccess, logout } from "../../reducers/auth";
-import { connect } from "react-redux";
-import LogoutButton from "./LogoutButton";
+import { loginSuccess, logout } from '../../reducers/auth';
+import { connect } from 'react-redux';
+import LogoutButton from './LogoutButton';
 
-function Header({ loginSuccess, logout, isAuthenticated }) {
+function Header({ logout, isAuthenticated }) {
   useEffect(() => {
   }, [isAuthenticated]);
 
@@ -16,7 +16,7 @@ function Header({ loginSuccess, logout, isAuthenticated }) {
           <SettingButton />
           <LogoutButton logout={logout} />
         </>) :
-      (<LoginButton loginSuccess={loginSuccess} />)
+      (<LoginButton />)
   }
 
   return (

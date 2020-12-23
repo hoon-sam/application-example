@@ -1,10 +1,13 @@
 import React from 'react';
 import './LoginButton.css';
+import { useHistory } from 'react-router-dom';
 
-export default function LoginButton({ loginSuccess }) {
+export default function LoginButton() {
+
+  const history = useHistory();
 
   const handleClick = () => {
-    loginSuccess();
+    history.push('/login');
   }
 
   return (

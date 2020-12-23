@@ -4,6 +4,7 @@ import Home from '../../pages/Home';
 import Chat from '../../pages/Chat';
 import Record from '../../pages/Record';
 import Etc from '../../pages/Etc';
+import Login from '../../pages/Login';
 import './Content.css';
 
 export default function Content() {
@@ -11,9 +12,10 @@ export default function Content() {
     <div className="content">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/chat" component={Chat} />
-        <Route exact path="/record" component={Record} />
-        <Route exact path="/etc" component={Etc} />
+        <Route path="/chat" component={Chat} />
+        <Route path="/record" component={Record} />
+        <Route path="/etc" component={Etc} />
+        <Route path="/login" component={Login} />
       </Switch>
     </div>
   )
