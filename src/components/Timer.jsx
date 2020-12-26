@@ -6,8 +6,6 @@ export default function Timer() {
   const [isPause, setPause] = useState(false);
   const countRef = useRef(null);
 
-  let countdown;
-
   useEffect(() => {
   }, [time]);
 
