@@ -1,3 +1,3 @@
 export const getChatRoomList = () => {
-  return fetch('/api/chat/rooms');
+  return fetch('/rooms');
 }
